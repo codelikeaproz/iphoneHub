@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round_edge"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/gadget_image"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/iphone12_blue" />
+
+        <TextView
+            android:id="@+id/gadget_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/gadget_image"
+            android:paddingVertical="5dp"
+            android:text="GadgetName"
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/CpuImg"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/gadget_name"
+            android:layout_marginStart="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_toRightOf="@id/gadget_image"
+            android:background="@drawable/cpu1"
+            android:backgroundTint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/CPU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gadget_name"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/CpuImg"
+            android:text="CPU"
+            android:textColor="@color/colorWhite"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:id="@+id/RamImg"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/CpuImg"
+            android:layout_margin="0.5dp"
+            android:layout_toRightOf="@id/gadget_image"
+            android:background="@drawable/ram"
+            android:backgroundTint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/RAM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CPU"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toRightOf="@id/RamImg"
+            android:text="RAM"
+            android:textColor="@color/colorWhite"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:id="@+id/OsImg"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/RamImg"
+            android:layout_marginStart="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_toRightOf="@id/gadget_image"
+            android:background="@drawable/osni"
+            android:backgroundTint="@color/colorWhite" />
+
+
+        <TextView
+            android:id="@+id/OS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RAM"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/OsImg"
+            android:text="OS"
+            android:textColor="@color/colorWhite"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:id="@+id/DisplayImg"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/OsImg"
+            android:layout_marginTop="0.5dp"
+            android:layout_toRightOf="@id/gadget_image"
+            android:background="@drawable/display"
+            android:backgroundTint="@color/colorWhite" />
+
+
+        <TextView
+            android:id="@+id/ScreenDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/OS"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toRightOf="@id/DisplayImg"
+            android:text="Display"
+            android:textColor="@color/colorWhite"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:id="@+id/StorageImg"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/DisplayImg"
+            android:layout_marginStart="0.5dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_toRightOf="@id/gadget_image"
+            android:background="@drawable/storage"
+            android:backgroundTint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/gadget_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ScreenDisplay"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/StorageImg"
+            android:text="Storage"
+            android:textColor="@color/colorWhite"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:id="@+id/ColorImg"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/StorageImg"
+            android:layout_marginStart="0.5dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_toRightOf="@id/gadget_image"
+            android:background="@drawable/color"
+            android:backgroundTint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/gadget_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gadget_storage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="83dp"
+            android:layout_marginEnd="7dp"
+            android:layout_toRightOf="@id/StorageImg"
+            android:text="Color"
+            android:textColor="@color/colorWhite"
+            android:textSize="8sp" />
+
+
+        <ImageView
+            android:id="@+id/BatteryImg"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/ColorImg"
+            android:layout_marginStart="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_toRightOf="@id/gadget_image"
+            android:background="@drawable/battery"
+            android:backgroundTint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/Battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gadget_color"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/BatteryImg"
+            android:text="Battery"
+            android:textColor="@color/colorWhite"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:id="@+id/CameraImg"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/BatteryImg"
+            android:layout_marginStart="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_toRightOf="@id/gadget_image"
+            android:background="@drawable/camera"
+            android:backgroundTint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/Camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Battery"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/CameraImg"
+            android:text="Camera"
+            android:textColor="@color/colorWhite"
+            android:textSize="8sp" />
+
+
+        <ImageView
+            android:id="@+id/priceTag"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/CameraImg"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/gadget_image"
+            android:background="@drawable/price_tag"
+            android:backgroundTint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/gadget_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Camera"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/priceTag"
+            android:text="Price"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

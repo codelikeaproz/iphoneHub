@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewGadget"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/iphone14pro" />
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
+        android:background="@drawable/search_view_bg"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Select Image" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Gadget Name" />
+
+    <EditText
+        android:id="@+id/editTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Color" />
+
+    <EditText
+        android:id="@+id/editTextStorage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Storage" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Price" />
+
+    <EditText
+        android:id="@+id/editTextRAM"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="RAM" />
+
+    <EditText
+        android:id="@+id/editTextOS"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="OS" />
+
+    <EditText
+        android:id="@+id/editTextCPU"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="CPU" />
+
+    <EditText
+        android:id="@+id/editTextBattery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Battery" />
+
+    <EditText
+        android:id="@+id/editTextDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Display" />
+
+    <EditText
+        android:id="@+id/editTextCamera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Camera" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Description" />
+
+    <EditText
+        android:id="@+id/editTextUrl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="URL" />
+
+
+    <!-- ... (rest of the EditText fields) ... -->
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_view_bg"
+        android:text="Save" />
+
+</LinearLayout>
