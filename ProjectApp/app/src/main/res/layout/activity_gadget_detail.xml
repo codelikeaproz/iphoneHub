@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gadget_detail"
+    android:layout_width="match_parent"
+    android:background="@color/colorBlue"
+    android:layout_height="match_parent"
+    tools:context=".GadgetDetailActivity">
+
+    <ImageView
+        android:id="@+id/GadgetImgView"
+        android:layout_width="350dp"
+        android:layout_marginTop="45dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+         />
+
+        <TextView
+            android:layout_below="@+id/GadgetImgView"
+            android:id="@+id/GadgetTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GadgetName"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor= "@color/colorWhite"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_below="@+id/GadgetImgView"
+            android:id="@+id/GadgetDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="GadgetDescription"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="italic | bold"
+            android:padding="15dp"
+            android:layout_centerHorizontal="true"
+            android:textColor= "@color/colorWhite"
+            android:textSize="15sp"/>
+
+
+    <Button
+        android:id="@+id/Back_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorWhite"
+        android:background="@drawable/arrow_back_btn"
+        android:textColor="@color/colorBlack"
+        />
+    <Button
+        android:id="@+id/webLink"
+        android:layout_width="200dp"
+        android:padding="10dp"
+        android:text="Buy Here!"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/circle_edge_btn"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content"
+
+        />
+</RelativeLayout>

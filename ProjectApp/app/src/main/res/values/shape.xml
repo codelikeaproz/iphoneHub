@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShapeAppearance">
+        <attr name="cornerFamily" format="string" />
+        <attr name="cornerSize" format="dimension" />
+    </declare-styleable>
+
+    <style name="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+</resources>
